@@ -1,0 +1,18 @@
+.footer {
+  background-color: #011627;
+  text-decoration-color: white;
+}
+
+.handpicked-collection {
+  background-color: #ff9f1c;
+}
+
+.footer {
+  background-color: #ff9f1c;
+}
+
+.search {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
