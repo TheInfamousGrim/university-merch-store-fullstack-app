@@ -11,6 +11,9 @@ const tagData = [
         tag_name: 'american',
     },
     {
+        tag_name: 'simple',
+    },
+    {
         tag_name: 'premium',
     },
     {
@@ -123,9 +126,6 @@ const tagData = [
     },
     {
         tag_name: 'enamel',
-    },
-    {
-        tag_name: 'bear',
     },
 ];
 
