@@ -103,7 +103,7 @@ img {
   bottom: 0;
   height: 4px;
   width: 80px;
-  background: #12263a;
+  background: transparent;
 }
 .product-link {
   text-decoration: none;
