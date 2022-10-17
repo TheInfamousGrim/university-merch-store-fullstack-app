@@ -27,6 +27,11 @@
   margin-right: 2cm;
 }
 
+.cart-toggle{
+  padding-left: 2%;
+  margin-right: 2cm;
+}
+
 .related-products {
   background-color: #ff9f1c;
   padding-bottom: 1cm;
@@ -361,12 +366,12 @@ header {
   color: var(--main-color);
   cursor: pointer;
 }
-.total {
+/* .total {
   display: flex;
   justify-content: flex-end;
   margin-top: 1.5rem;
   border-top: 1px solid var(--text-color);
-}
+} */
 .total-title {
   font-size: 1rem;
   font-weight: 600;
@@ -579,6 +584,12 @@ ul li:hover {
   border-right: 10px solid #011627;
   width: 50%;
 }
+
+.search-button {
+  padding-left: 2%;
+  margin-left: 1%;
+}
+
 .window {
   height: 540px;
   width: 800px;
