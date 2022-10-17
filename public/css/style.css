@@ -118,7 +118,7 @@ img {
   transition: all 0.5s ease;
 }
 .product-link:hover {
-  opacity: 0.9;
+  opacity: 0.89;
 }
 .product-rating {
   color: #ffc107;
