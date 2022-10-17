@@ -1,9 +1,15 @@
 // import models
-const Product = require('./product');
+const Cart = require('./cart');
 const Category = require('./category');
-const Tag = require('./tags');
+const CustomerOrder = require('./customerOrder');
+const Product = require('./product');
 const ProductTag = require('./productTag');
+const Tag = require('./tags');
 const User = require('./user');
+
+/* -------------------------------------------------------------------------- */
+/*                  products, categories and tag associations                 */
+/* -------------------------------------------------------------------------- */
 
 // Products belongsTo Category
 Product.belongsTo(Category, {
@@ -27,9 +33,62 @@ Tag.belongsToMany(Product, {
     foreignKey: 'tag_id',
 });
 
+/* -------------------------------------------------------------------------- */
+/*                      user, order and cart associations                     */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------- cart associations -------------------------- */
+
+// Products belongsTo Carts
+Product.belongsTo(Cart, {
+    foreignKey: 'cart_id',
+});
+
+// Carts hasMany Products
+Cart.hasMany(Product, {
+    foreignKey: 'cart_id',
+});
+
+/* ---------------------------- user associations --------------------------- */
+
+// Cart belongsTo one user
+Cart.belongsTo(User, {
+    foreignKey: 'user_id',
+});
+
+// User hasMany carts
+User.hasMany(Cart, {
+    foreignKey: 'user_id',
+});
+
+// Order belongsTo one user
+CustomerOrder.belongsTo(User, {
+    foreignKey: 'user_id',
+});
+
+// User hasMany orders
+User.hasMany(CustomerOrder, {
+    foreignKey: 'user_id',
+});
+
+// /* --------------------------- order associations --------------------------- */
+
+// Cart belongsTo one order
+Cart.belongsTo(CustomerOrder, {
+    foreignKey: 'order_id',
+});
+
+// Order hasMany carts
+CustomerOrder.hasMany(Cart, {
+    foreignKey: 'order_id',
+});
+
 module.exports = {
-    Product,
+    Cart,
     Category,
-    Tag,
+    CustomerOrder,
+    Product,
     ProductTag,
+    Tag,
+    User,
 };

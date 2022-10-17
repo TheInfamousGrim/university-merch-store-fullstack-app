@@ -5,10 +5,10 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // Initialize Product model (table) by extending off Sequelize's Model class
-class Order extends Model {}
+class CustomerOrder extends Model {}
 
 // set up fields and rules for Product model
-Order.init(
+CustomerOrder.init(
     {
         // define columns
         id: {
@@ -28,13 +28,6 @@ Order.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        cart_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'cart',
-                key: 'id',
-            },
-        },
         total: {
             type: DataTypes.INTEGER,
             allowNull: false,
@@ -48,8 +41,8 @@ Order.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'product',
+        modelName: 'customer_order',
     }
 );
 
-module.exports = Order;
+module.exports = CustomerOrder;
