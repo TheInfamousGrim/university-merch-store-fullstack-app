@@ -1,13 +1,14 @@
+// import important parts of sequelize library
 const { Model, DataTypes } = require('sequelize');
 
-// Import db
+// import our database connection from config.js
 const sequelize = require('../config/connection');
 
-// Initialize cart model (table) by extending off Sequilize's Model Class
-class Cart extends Model {}
+// Initialize Product model (table) by extending off Sequelize's Model class
+class Order extends Model {}
 
-// Set up fields and rules for Cart model
-Cart.init(
+// set up fields and rules for Product model
+Order.init(
     {
         // define columns
         id: {
@@ -23,20 +24,23 @@ Cart.init(
                 key: 'id',
             },
         },
-        product_id: {
+        payment_method: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        cart_id: {
             type: DataTypes.INTEGER,
             references: {
-                model: 'product',
+                model: 'cart',
                 key: 'id',
             },
         },
-        quantity: {
+        total: {
             type: DataTypes.INTEGER,
             allowNull: false,
-        },
-        order_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
+            validate: {
+                isDecimal: true,
+            },
         },
     },
     {
@@ -44,6 +48,8 @@ Cart.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'cart',
+        modelName: 'product',
     }
 );
+
+module.exports = Order;
