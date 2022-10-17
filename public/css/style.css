@@ -411,9 +411,28 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(220px, auto));
   gap: 1.5rem;
 }
+
+.catalog-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  gap: 1.5rem;
+}
+
 .product-box {
   position: relative;
 }
+
+.catalog-box{
+  position: relative;
+}
+
+.catalog-box:hover {
+  padding: 10px;
+  border: 1px solid var(--text-color);
+  transition: 0.4s;
+
+}
+
 .product-box:hover {
   padding: 10px;
   border: 1px solid var(--text-color);
