@@ -1,0 +1,20 @@
+[
+  {
+    "first_name": "George",
+    "last_name": "Fincher",
+    "email": "finchergeorge1@gmail.com",
+    "password": "randomPass178"
+  },
+  {
+    "first_name": "Ramla",
+    "last_name": "Ahmed",
+    "email": "ramla212@hotmail.co.uk",
+    "password": "SomePass486"
+  },
+  {
+    "first_name": "Khalid",
+    "last_name": "Hussen",
+    "email": "khalid354@gmail.com",
+    "password": "yourPass576"
+  }
+]
