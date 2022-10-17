@@ -347,7 +347,7 @@ const productTagData = [
     },
     {
         product_id: 29,
-        tag_id: 43,
+        tag_id: 18,
     },
     {
         product_id: 30,
@@ -387,11 +387,11 @@ const productTagData = [
     },
     {
         product_id: 36,
-        tag_id: 34,
+        tag_id: 35,
     },
     {
         product_id: 37,
-        tag_id: 35,
+        tag_id: 34,
     },
 ];
 
