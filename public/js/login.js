@@ -3,8 +3,8 @@ const loginForm = async (event) => {
     event.preventDefault();
 
     // Gather the data from the form elements on the page
-    const email = document.querySelector('#floatingInput').value.trim();
-    const password = document.querySelector('#floatingPassword').value.trim();
+    const email = document.querySelector('#usernameInput').value.trim();
+    const password = document.querySelector('#passwordInput').value.trim();
 
     if (email && password) {
         // Send the e-mail and password to the server
@@ -22,4 +22,4 @@ const loginForm = async (event) => {
     }
 };
 
-document.querySelector('.loginForm').addEventListener('submit', loginForm);
+document.querySelector('.login-form').addEventListener('submit', loginForm);
