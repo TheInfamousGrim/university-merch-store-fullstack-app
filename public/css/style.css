@@ -11,6 +11,9 @@
   background-color: #011627;
 }
 
+.categories-section{
+  background-color: #011627;
+}
 .search {
   display: flex;
   align-items: flex-end;
@@ -407,14 +410,15 @@ header {
   text-align: center;
   margin-bottom: 1.5rem;
 }
-.shop {
+/* .shop {
   margin-top: 2rem;
-}
+} */
 /* Shop Content */
 .shop-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, auto));
   gap: 1.5rem;
+ 
 }
 
 .catalog-content{
@@ -800,3 +804,34 @@ ul li:hover {
   @media screen and (max-width: 576px) {
   }
 }
+
+
+article {
+  /*  leverage cascade for cross-browser gradients  */
+  background: radial-gradient(
+    hsl(100 100% 60%), 
+    hsl(200 100% 60%) 
+  ) fixed;
+  background: conic-gradient(
+    hsl(100 100% 60%), 
+    hsl(200 100% 60%), 
+    hsl(100 100% 60%) 
+  ) fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;}
+
+  h1 {
+    font-size: 10vmin;
+    line-height: 1.1;
+    max-inline-size: 15ch;
+    margin: auto;
+  }
+
+  p {
+    font-family: "Dank Mono", ui-monospace, monospace;
+    margin-top: 1ch;
+    line-height: 1.35;
+    max-inline-size: 40ch;
+    margin: auto;
+  }
