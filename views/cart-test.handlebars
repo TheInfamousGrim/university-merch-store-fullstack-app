@@ -13,7 +13,7 @@
   <body class="p-3 m-0 border-0 bd-example">
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="./images/UOB-Logo.png" alt="University of birmingham logo"
+        <a class="navbar-brand" href="#"><img src="/public/images/exeter-logo.png" alt=""
             width="100"
             height="100"></a>
         <button
@@ -43,12 +43,12 @@
           <div class="d-flex align-items-end">
                 <form class="d-flex" role="search">
                   <input
-                    class="form-control me-2"
+                    class=""
                     type="search"
                     placeholder="Search"
                     aria-label="Search"
                   />
-                  <button class="btn btn-outline-success" type="submit">
+                  <button class="btn btn-outline-success search-button" type="submit">
                     Search
                   </button>
                 </form>
@@ -66,7 +66,8 @@
                       </form>
                     </ul>
                 </div>
-                <div class="nav container">
+        
+                  <div class="nav container cart-toggle">
                   <!-- <a href="#" class="logo">Ecommerce</a> -->
                   <!-- Cart-Icon -->
                   <i class='bx bx-shopping-bag' id="cart-icon"></i>
@@ -91,82 +92,130 @@
         
       </div>
     </nav>   
+        
+    <div class="text-center img-fluid uni-photo">
+      <img
+        src="/public/images/UniStudentPhoto.png"
+        class="rounded"
+        alt="University Student Photo"
+        width="500"
+        height="600"
+      />
+    </div>
 
-    <div class='cartcontainer'>
-        <div class='window'>
-          <div class='order-info'>
-            <div class='order-info-content'>
-              <h2>Order Summary</h2>
-                      <div class='line'></div>
-              <table class='order-table'>
-                <tbody>
-                  <tr>
-                    <td><img src='https://dl.dropboxusercontent.com/s/sim84r2xfedj99n/%24_32.JPG' class='full-width'></img>
-                    </td>
-                    <td>
-                      <br> <span class='thin'>Nike</span>
-                      <br> Free Run 3.0 Women<br> <span class='thin small'> Color: Grey/Orange, Size: 10.5<br><br></span>
-                    </td>
-      
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class='price'>$99.95</div>
-                    </td>
-                  </tr>
-                </tbody>
-      
-              </table>
-              <div class='line'></div>
-              <table class='order-table'>
-                <tbody>
-                  <tr>
-                    <td><img src='https://dl.dropboxusercontent.com/s/qbj9tsbvthqq72c/Vintage-20L-Backpack-by-Fj%C3%A4llr%C3%A4ven.jpg' class='full-width'></img>
-                    </td>
-                    <td>
-                      <br> <span class='thin'>Fjällräven</span>
-                      <br>Vintage Backpack<br> <span class='thin small'> Color: Olive, Size: 20L</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class='price'>$235.95</div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class='line'></div>
-              <table class='order-table'>
-                <tbody>
-                  <tr>
-                    <td><img src='https://dl.dropboxusercontent.com/s/nbr4koso8dpoggs/6136C1p5FjL._SL1500_.jpg' class='full-width'></img>
-                    </td>
-                    <td>
-                      <br> <span class='thin'>Monobento</span>
-                      <br>Double Lunchbox<br> <span class='thin small'> Color: Pink, Size: Medium</span>
-                    </td>
-      
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class='price'>$25.95</div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class='line'></div>
-              <div class='total'>
-                <span style='float:left;'>
-                  <div class='thin dense'>VAT 19%</div>
-                  <div class='thin dense'>Delivery</div>
-                  TOTAL
-                </span>
-                <span style='float:right; text-align:right;'>
-                  <div class='thin dense'>$68.75</div>
-                  <div class='thin dense'>$4.95</div>
-                  $435.55
-                </span>
+    <div class=" categories-section " >
+      <article>
+        <h1>Shop By Category</h1>
+       
+      </article>
+      <div>
+        <section class="shop container">
+     
+          <!-- Content -->
+          <div class="catalog-content">
+              <!-- Box 1 -->
+              <div class="catalog-box">
+                <button><img src="/public/images/hoodie-new.jpg" alt="" class="product-img">
+                  <h2 class="product-title" {{name}}>Hoodies</h2></button>  
+                   
+                  
+                </div>
+              <!-- Box 2 -->
+              <div class="catalog-box">
+              <button><img src="/public/images/Hats - New.jpg" alt="" class="product-img">
+                <h2 class="product-title" {{name}}> Headwear </h2></button>  
+                 
+                
               </div>
+              <!-- Box 3 -->
+              <div class="catalog-box">
+                <button><img src="/public/images/gym-clothes-men - new.jpg" alt="" class="product-img">
+                  <h2 class="product-title" {{name}} > For The Gym </h2></button>
+                  
+                
+              </div>
+              <!-- Box 4 -->
+              <div class="catalog-box">
+              <button> <img src="/public/images/PlayerLayer-New.jpg" alt="" class="product-img">
+                <h2 class="product-title" {{name}} >Player Layer</h2></button> 
+                  
+                  
+              </div>
+              <!-- Box 5 -->
+              <div class="catalog-box">
+               <button><img src="/public/images/gifts-new.jpg" alt="" class="product-img">
+                <h2 class="product-title" {{name}} > Gifts </h2></button> 
+                 
+                
+              </div>
+            
+              </div>
+          </div>
+      </section>
+      </div>
+
+    </div>
+
+    <section class="shop container">
+      <h2 class="section-title">Shop Products</h2>
+      <!-- Content -->
+      <div class="shop-content">
+          <!-- Box 1 -->
+          <div class="product-box">
+              <img src="/public/images/product1.jpg" alt="" class="product-img">
+              <h2 class="product-title" {{name}} >AEROREADY SHIRT</h2>
+              <span class="price">$25</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+          </div>
+          <!-- Box 2 -->
+          <div class="product-box">
+            <img src="/public/images/product2.jpg" alt="" class="product-img">
+              <h2 class="product-title" {{name}}>WIRELESS EARBUDS</h2>
+              <span class="price">$100</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+          </div>
+          <!-- Box 3 -->
+          <div class="product-box">
+            <img src="/public/images/product3.jpg" alt="" class="product-img">
+              <h2 class="product-title" {{name}} >HOODED PARKA</h2>
+              <span class="price">$45</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+          </div>
+          <!-- Box 4 -->
+          <div class="product-box">
+            <img src="/public/images/product4.jpg" alt="" class="product-img">
+              <h2 class="product-title" {{name}} >STRAW METAL BOTTLE</h2>
+              <span class="price">$24.04</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+          </div>
+          <!-- Box 5 -->
+          <div class="product-box">
+            <img src="/public/images/product5.jpg" alt="" class="product-img">
+              <h2 class="product-title" {{name}} >METAL Sunglasses</h2>
+              <span class="price">$50</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+          </div>
+          <!-- Box 6 -->
+          <div class="product-box">
+            <img src="/public/images/product6.jpg" alt="" class="product-img">
+              <h2 class="product-title" {{name}} >BACK HAT</h2>
+              <span class="price">$50</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+          </div>
+          <!-- Box 7 -->
+          <div class="product-box">
+            <img src="/public/images/product7.jpg" alt="" class="product-img">
+              <h2 class="product-title" {{name}} >BACKPACK</h2>
+              <span class="price">$70</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+          </div>
+          <!-- Box 8 -->
+          <div class="product-box">
+            <img src="/public/images/product8.jpg" alt="" class="product-img">
+              <h2 class="product-title" {{name}} >ULTRABOOST 22</h2>
+              <span class="price">$45</span>
+              <i class='bx bx-shopping-bag add-cart'></i>
+          </div>
       </div>
       </div>
             

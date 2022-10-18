@@ -11,6 +11,9 @@
   background-color: #011627;
 }
 
+.categories-section{
+  background-color: #011627;
+}
 .search {
   display: flex;
   align-items: flex-end;
@@ -23,6 +26,11 @@
 }
 
 .log-in-toggle {
+  padding-left: 2%;
+  margin-right: 2cm;
+}
+
+.cart-toggle{
   padding-left: 2%;
   margin-right: 2cm;
 }
@@ -121,7 +129,7 @@ img {
   bottom: 0;
   height: 4px;
   width: 80px;
-  background: #12263a;
+  background: transparent;
 }
 .product-link {
   text-decoration: none;
@@ -136,7 +144,7 @@ img {
   transition: all 0.5s ease;
 }
 .product-link:hover {
-  opacity: 0.9;
+  opacity: 0.89;
 }
 .product-rating {
   color: #ffc107;
@@ -380,12 +388,12 @@ header {
   color: var(--main-color);
   cursor: pointer;
 }
-.total {
+/* .total {
   display: flex;
   justify-content: flex-end;
   margin-top: 1.5rem;
   border-top: 1px solid var(--text-color);
-}
+} */
 .total-title {
   font-size: 1rem;
   font-weight: 600;
@@ -421,18 +429,38 @@ header {
   text-align: center;
   margin-bottom: 1.5rem;
 }
-.shop {
+/* .shop {
   margin-top: 2rem;
-}
+} */
 /* Shop Content */
 .shop-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, auto));
   gap: 1.5rem;
+ 
 }
+
+.catalog-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  gap: 1.5rem;
+}
+
 .product-box {
   position: relative;
 }
+
+.catalog-box{
+  position: relative;
+}
+
+.catalog-box:hover {
+  padding: 10px;
+  border: 1px solid var(--text-color);
+  transition: 0.4s;
+
+}
+
 .product-box:hover {
   padding: 10px;
   border: 1px solid var(--text-color);
@@ -578,6 +606,12 @@ ul li:hover {
   border-right: 10px solid #011627;
   width: 50%;
 }
+
+.search-button {
+  padding-left: 2%;
+  margin-left: 1%;
+}
+
 .window {
   height: 540px;
   width: 800px;
@@ -775,3 +809,47 @@ ul li:hover {
     border-radius: 0px;
   }
 }
+
+.uni-photo {
+  @media screen and (max-width: 992px) {
+  height
+  
+  }
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+  }
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+  }
+}
+
+
+article {
+  /*  leverage cascade for cross-browser gradients  */
+  background: radial-gradient(
+    hsl(100 100% 60%), 
+    hsl(200 100% 60%) 
+  ) fixed;
+  background: conic-gradient(
+    hsl(100 100% 60%), 
+    hsl(200 100% 60%), 
+    hsl(100 100% 60%) 
+  ) fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;}
+
+  h1 {
+    font-size: 10vmin;
+    line-height: 1.1;
+    max-inline-size: 15ch;
+    margin: auto;
+  }
+
+  p {
+    font-family: "Dank Mono", ui-monospace, monospace;
+    margin-top: 1ch;
+    line-height: 1.35;
+    max-inline-size: 40ch;
+    margin: auto;
+  }
