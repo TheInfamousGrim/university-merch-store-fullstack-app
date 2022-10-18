@@ -24,7 +24,7 @@ The application is a backend application that encompasses a range of different t
 
 Heres a screen shot of the webpage
 
-![](./)
+![Site Picture](./README_assets/Screenshot%202022-10-18%20at%2017-21-31%20University%20of%20Exeter%20-%20Merchandise%20Homepage.png)
 
 ## Links
 
