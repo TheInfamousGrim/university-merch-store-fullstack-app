@@ -6,7 +6,7 @@ A backend for an e-commerce website.
 
 Our development is a University-merch e-commerce application that allows you to purchase products.
 
-The application is a backend application that can do that
+The application is a backend application that encompasses a range of different technologies that would highlight collaborative skills between members of the group.
 
 ## Technologies
 
@@ -20,10 +20,10 @@ The application is a backend application that can do that
 - Node.js
 - Express
 
-## Links
-
-GitHub URL - https://github.com/TheInfamousGrim/university-merch-store-fullstack-app
-
 ## ScreenShot
 
 Heres a screen shot of the webpage
+
+## Links
+
+GitHub URL - https://github.com/TheInfamousGrim/university-merch-store-fullstack-app
