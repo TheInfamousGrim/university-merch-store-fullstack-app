@@ -5,15 +5,18 @@ const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 
+// sync up to the db
 const sequelize = require('./config/connection');
-
 // Create a new sequelize store using the express-session package
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-const hbs = exphbs.create({ helpers });
+// Configure handlebars templating engine
+const hbs = exphbs.create({
+    helpers,
+});
 
 // Configure and link a session object with the sequelize store
 const sess = {
