@@ -41,6 +41,15 @@ product-page-section {
   margin-top: 3cm;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                  hero img                                  */
+/* -------------------------------------------------------------------------- */
+.hero-img {
+  width: 80%;
+  height: 100%;
+  margin: 1rem auto;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
 * {
@@ -482,7 +491,6 @@ header {
 }
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
-body,
 html {
   height: 100%;
   margin: 0;

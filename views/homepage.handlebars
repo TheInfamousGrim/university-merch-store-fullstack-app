@@ -1,7 +1,7 @@
 <div class="text-center">
   <img
     src="./images/UniStudentPhoto.png"
-    class="rounded"
+    class="rounded hero-img"
     alt="University Student Photo"
     width="600"
     height="400"
@@ -14,16 +14,18 @@
   <!-- Content -->
   <div class="shop-content">
     {{#each products}}
-      <div class="product-box">
-        <img src="{{img_url}}" alt="" class="product-img" />
-        <h2 class="product-title">
-          {{product_name}}
-        </h2>
-        <span class="price">
-          {{price}}
-        </span>
-        <i class="bx bx-shopping-bag add-cart"></i>
-      </div>
+      <a href="/product/{{id}}">
+        <div class="product-box">
+          <img src="{{img_url}}" alt="" class="product-img" />
+          <h2 class="product-title">
+            {{product_name}}
+          </h2>
+          <span class="price">
+            {{price}}
+          </span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+      </a>
     {{/each}}
   </div>
 </main>
