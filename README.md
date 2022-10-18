@@ -24,6 +24,8 @@ The application is a backend application that encompasses a range of different t
 
 Heres a screen shot of the webpage
 
+![](./)
+
 ## Links
 
 GitHub URL - https://github.com/TheInfamousGrim/university-merch-store-fullstack-app
