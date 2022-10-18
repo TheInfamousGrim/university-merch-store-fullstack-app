@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
-/* --------------------------- render login modal --------------------------- */
+/* -------------------------- render logged in page ------------------------- */
 router.get('/login', async (req, res) => {
     try {
         res.render('login');
