@@ -1,5 +1,4 @@
 // get search bar element
-
 const searchInput = document.getElementById('searchInput');
 const searchBtn = document.getElementById('searchBtn');
 

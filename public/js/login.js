@@ -1,5 +1,5 @@
 const loginForm = async (event) => {
-    // Stop the browser from submitting the form so we can do so with JavaScript
+    // Stop the browser from submitting the form
     event.preventDefault();
 
     // Gather the data from the form elements on the page
@@ -8,7 +8,7 @@ const loginForm = async (event) => {
 
     if (email && password) {
         // Send the e-mail and password to the server
-        const response = await fetch('/user', {
+        const response = await fetch('/api/users/login', {
             method: 'POST',
             body: JSON.stringify({ email, password }),
             headers: { 'Content-Type': 'application/json' },

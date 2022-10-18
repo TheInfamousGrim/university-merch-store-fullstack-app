@@ -1,31 +1,41 @@
-<div class="text-center">
-  <img
-    src="./images/UniStudentPhoto.png"
-    class="rounded hero-img"
-    alt="University Student Photo"
-    width="600"
-    height="400"
-  />
-</div>
-<main class="shop container">
-  <h2 class="section-title">
-    Shop Products
-  </h2>
-  <!-- Content -->
-  <div class="shop-content">
-    {{#each products}}
-      <a href="product/{{id}}">
-        <div class="product-box">
-          <img src="{{img_url}}" alt="" class="product-img" />
-          <h2 class="product-title">
-            {{product_name}}
-          </h2>
-          <span class="price">
-            {{price}}
-          </span>
-          <i class="bx bx-shopping-bag add-cart"></i>
-        </div>
-      </a>
-    {{/each}}
-  </div>
-</main>
+<!DOCTYPE html>
+<html>
+  {{> head}}
+  <body>
+    {{> navbar}}
+    <div class="text-center">
+      <img
+        src="./images/UniStudentPhoto.png"
+        class="rounded hero-img"
+        alt="University Student Photo"
+        width="600"
+        height="400"
+      />
+    </div>
+    <main class="shop container">
+      <h2 class="section-title">
+        Shop Products
+      </h2>
+      <!-- Content -->
+      <div class="shop-content">
+        {{#each products}}
+          <a href="product/{{id}}">
+            <div class="product-box">
+              <img src="{{img_url}}" alt="" class="product-img" />
+              <h2 class="product-title">
+                {{product_name}}
+              </h2>
+              <span class="price">
+                {{price}}
+              </span>
+              <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+          </a>
+        {{/each}}
+      </div>
+    </main>
+    {{> footer}}
+  </body>
+  {{> scripts}}
+  <script src="./js/logout.js"></script>
+</html>
